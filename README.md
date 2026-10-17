@@ -6,6 +6,8 @@ A solution to the [Article Preview Component](https://www.frontendmentor.io/chal
 
 **Repository:** https://github.com/HsHs-dev/article-preview-component
 
+![screenshot for the final site look](./Screenshot.png)
+
 ## Built with
 
 - Semantic HTML5
