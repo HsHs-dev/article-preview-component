@@ -4,12 +4,17 @@ const avatarInfo = avatar.querySelector(".avatar-info")
 const share = avatar.querySelector(".share")
 const shareButton = avatar.querySelector("button")
 
-/* Events Hanlers */
+/* Event Handlers */
 function toggleVisibility() {
-  avatar.classList.toggle("visible")
-  avatarInfo.classList.toggle("visible")
-  share.classList.toggle("visible")
-  shareButton.classList.toggle("visible")
+  const isExpanded = shareButton.getAttribute("aria-expanded") === "true"
+  const shouldExpand = !isExpanded
+
+  shareButton.setAttribute("aria-expanded", String(shouldExpand))
+
+  avatar.classList.toggle("visible", shouldExpand)
+  avatarInfo.classList.toggle("visible", shouldExpand)
+  share.classList.toggle("visible", shouldExpand)
+  shareButton.classList.toggle("visible", shouldExpand)
 }
 
 /* Event Listeners */

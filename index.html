@@ -21,66 +21,66 @@
 </head>
 
 <body>
-
-  <article class="card">
-
-    <div class="card-image">
-      <img src="./images/drawers.jpg" alt="">
-    </div>
-
-    <div class="card-content">
-      <div class="text-content">
-        <p class="description">
-          Shift the overall look and feel by adding these wonderful
-          touches to furniture in your home
-        </p>
-        <p class="details">
-          Ever been in a room and felt like something was missing? Perhaps
-          it felt slightly bare and uninviting. I’ve got some simple tips
-          to help you make any room feel complete.
-        </p>
+  <main>
+    <article class="card" aria-labelledby="article-title">
+      <div class="card-image">
+        <img src="./images/drawers.jpg" alt="">
       </div>
-    </div>
 
-    <div class="avatar">
-      <div class="avatar-info">
-        <div class="avatar-image">
-          <img src="./images/avatar-michelle.jpg" alt="">
-        </div>
-        <div class="avatar-details">
-          <p class="name">
-            Michelle Appleton
-          </p>
-          <p class="date">
-            28 Jun 2020
+      <div class="card-content">
+        <div class="text-content">
+          <h1 class="description" id="article-title">
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h1>
+
+          <p class="details">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
           </p>
         </div>
       </div>
 
-      <div class="share">
-        <p>SHARE</p>
-        <div class="socials">
-          <a href="https://facebook.com">
-            <img src="./images/icon-facebook.svg" alt="">
-          </a>
-          <a href="https://x.com/Hshs_dev">
-            <img src="./images/icon-twitter.svg" alt="">
-          </a>
-          <a href="https://www.pinterest.com/">
-            <img src="./images/icon-pinterest.svg" alt="">
-          </a>
+      <div class="avatar">
+        <div class="avatar-info">
+          <div class="avatar-image">
+            <img src="./images/avatar-michelle.jpg" alt="">
+          </div>
+
+          <div class="avatar-details">
+            <p class="name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+          </div>
         </div>
+
+        <div class="share" id="share-menu">
+          <p>SHARE</p>
+
+          <div class="socials">
+            <a href="https://facebook.com" aria-label="Visit Facebook">
+              <img src="./images/icon-facebook.svg" alt="">
+            </a>
+
+            <a href="https://x.com/Hshs_dev" aria-label="Visit X">
+              <img src="./images/icon-twitter.svg" alt="">
+            </a>
+
+            <a href="https://www.pinterest.com/" aria-label="Visit Pinterest">
+              <img src="./images/icon-pinterest.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <button type="button" aria-label="Share article" aria-expanded="false" aria-controls="share-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+          </svg>
+        </button>
       </div>
-
-      <button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
-          <path fill="currentColor"
-            d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
-        </svg>
-      </button>
-    </div>
-  </article>
-
+    </article>
+  </main>
 </body>
 
 
